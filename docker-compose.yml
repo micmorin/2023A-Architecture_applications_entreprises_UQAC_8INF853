@@ -1,0 +1,64 @@
+version: '3.0'
+
+services:
+  db:
+    container_name: InfluxDB
+    image: influxdb:latest
+    ports:
+      - "8086:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup 
+      - DOCKER_INFLUXDB_INIT_USERNAME=my-user 
+      - DOCKER_INFLUXDB_INIT_PASSWORD=my-password 
+      - DOCKER_INFLUXDB_INIT_ORG=my-org 
+      - DOCKER_INFLUXDB_INIT_BUCKET=my-bucket 
+      - DOCKER_INFLUXDB_INIT_RETENTION=1w 
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-super-secret-auth-token
+
+    volumes:
+      - ./InfluxDB/var/lib:/var/lib/influxdb2
+      - ./InfluxDB/config.yml:/etc/influxdb2/config.yml
+
+  managed:
+    container_name: Managed_container
+    ports:
+     - "2000:5000"
+    build:
+      context: ./Managed
+      dockerfile: Dockerfile
+    volumes:
+      - ./Managed/app:/app
+
+  manager:
+    container_name: Manager_container
+    ports:
+     - "2001:5000"
+    environment:
+      - INFLUXDB_TOKEN=FYF6xb_XSia0k_fMdl9-L9ynHokGx_Xvsa52wcEaPUixFbtfJfJDDe7MNFFN2vSiX3Bcxl6Fhe4J-9Gaeg7TTA==
+    build:
+      context: ./Manager
+      dockerfile: Dockerfile
+    volumes:
+      - ./Manager/app:/app
+
+  objet:
+    container_name: Objet_container
+    ports:
+     - "2002:8000"
+    build:
+      context: ./Objet
+      dockerfile: Dockerfile
+    volumes:
+      - ./Objet/app:/app
+
+  ui:
+    container_name: UI_container
+    ports:
+      - "80:5000"
+    build:
+      context: ./UI
+      dockerfile: Dockerfile
+    volumes:
+      - ./UI/app:/app
+    environment:
+      - INFLUXDB_TOKEN=FYF6xb_XSia0k_fMdl9-L9ynHokGx_Xvsa52wcEaPUixFbtfJfJDDe7MNFFN2vSiX3Bcxl6Fhe4J-9Gaeg7TTA==

@@ -1,0 +1,78 @@
+00:0f:00:70:91:0a:
+  Context:
+  - 00:0f:00:70:91:0a
+'15':
+  Context:
+  - '15'
+1c:bf:ce:15:ec:4d:
+  Context:
+  - 1c:bf:ce:15:ec:4d
+'2.0':
+  Context:
+  - '2.0'
+'4135001':
+  Context:
+  - '4135001'
+'4136001':
+  Context:
+  - '4136001'
+Anand_Vihar:
+  Context:
+  - Anand
+  - Vihar
+Aruba_Motion:
+  Context:
+  - Aruba
+  - Motion
+Aruba_Temp:
+  Context:
+  - Aruba
+  - Temp
+Delhi_DPCC:
+  Context:
+  - Delhi
+  - DPCC
+ItalianCity:
+  Context:
+  - ItalianCity
+Kyoto_Electricity:
+  Context:
+  - Kyoto
+  - Electricity
+M003:
+  Context:
+  - M003
+M009:
+  Context:
+  - M009
+M017:
+  Context:
+  - M017
+M019:
+  Context:
+  - M019
+Milan_Motion:
+  Context:
+  - Milan
+  - Motion
+Multisensor:
+  Context:
+  - Multisensor
+P001:
+  Context:
+  - P001
+Powerplant:
+  Context:
+  - Powerplant
+T002:
+  Context:
+  - T002
+T003:
+  Context:
+  - T003
+b8:27:eb:bf:9d:51:
+  Context:
+  - b8:27:eb:bf:9d:51
+multisensor1:
+  Context:
+  - multisensor1

@@ -1,0 +1,21 @@
+rule_example1:
+  if:
+    comparison: '>'
+    object: L_Example
+    subject: M_Example
+  scope: Example
+  then:
+    action: Contact
+    object: User
+    subject: System
+rule_example2:
+  if:
+    comparison: '>'
+    object: L_Example
+    subject: M_Example
+  scope: Example
+  then:
+    action: Contact
+    notes: Example
+    object: User
+    subject: System

@@ -1,0 +1,414 @@
+00:0f:00:70:91:0a:
+  CO:
+  - Type is Float
+  - Interval between 0.0027928260727185 and 0.0029381156266604
+  - Frequency is 0:00:03.367640
+  HUMIDITY:
+  - Type is Float
+  - Interval between 75.80000305175781 and 76.19999694824219
+  - Frequency is 0:00:03.367640
+  LIGHT:
+  - Type is Bool
+  - Interval between False and False
+  - Frequency is 0:00:03.367640
+  LPG:
+  - Type is Float
+  - Interval between 0.0050526720657329 and 0.0052414818417311
+  - Frequency is 0:00:03.367640
+  MOTION:
+  - Type is Bool
+  - Interval between False and False
+  - Frequency is 0:00:03.367640
+  SMOKE:
+  - Type is Float
+  - Interval between 0.0131038089189969 and 0.0136275211320191
+  - Frequency is 0:00:03.367640
+  TEMP:
+  - Type is Float
+  - Interval between 19.700000762939453 and 19.799999237060547
+  - Frequency is 0:00:03.367640
+'15':
+  EDA:
+  - Type is Float
+  - Interval between 6.769995 and 6.805877
+  - Frequency is 0:00:00.018319
+  HR:
+  - Type is Float
+  - Interval between 99.43 and 99.43
+  - Frequency is 0:00:00.018319
+  TEMP:
+  - Type is Float
+  - Interval between 31.17 and 31.17
+  - Frequency is 0:00:00.018319
+  X:
+  - Type is Float
+  - Interval between -1.0 and 9.0
+  - Frequency is 0:00:00.018319
+  Y:
+  - Type is Float
+  - Interval between -53.0 and -78.0
+  - Frequency is 0:00:00.018319
+  Z:
+  - Type is Float
+  - Interval between -14.0 and 5.0
+  - Frequency is 0:00:00.018319
+1c:bf:ce:15:ec:4d:
+  CO:
+  - Type is Float
+  - Interval between 0.0043435076691941 and 0.0044678607855881
+  - Frequency is 0:00:02.966343
+  HUMIDITY:
+  - Type is Float
+  - Interval between 76.80000305175781 and 79.0999984741211
+  - Frequency is 0:00:02.966343
+  LIGHT:
+  - Type is Bool
+  - Interval between True and True
+  - Frequency is 0:00:02.966343
+  LPG:
+  - Type is Float
+  - Interval between 0.0069545280445542 and 0.0070979985177297
+  - Frequency is 0:00:02.966343
+  MOTION:
+  - Type is Bool
+  - Interval between False and False
+  - Frequency is 0:00:02.966343
+  SMOKE:
+  - Type is Float
+  - Interval between 0.0184333425756136 and 0.0188398303929132
+  - Frequency is 0:00:02.966343
+  TEMP:
+  - Type is Float
+  - Interval between 27.0 and 27.0
+  - Frequency is 0:00:02.966343
+'2.0':
+  EDA:
+  - Type is Float
+  - Frequency is 0:00:00
+  HR:
+  - Type is Float
+  - Frequency is 0:00:00
+  TEMP:
+  - Type is Float
+  - Frequency is 0:00:00
+  X:
+  - Type is Float
+  - Frequency is 0:00:00
+  Y:
+  - Type is Float
+  - Frequency is 0:00:00
+  Z:
+  - Type is Float
+  - Frequency is 0:00:00
+'4135001':
+  AC_POWER:
+  - Type is Float
+  - Interval between 0.0 and 0.0
+  - Frequency is 0:00:00
+  AMBIENT_TEMPERATURE:
+  - Type is Float
+  - Interval between 24.5360922 and 25.184316133333333
+  - Frequency is 0:00:00
+  DAILY_YIELD:
+  - Type is Float
+  - Interval between 0.0 and 0.0
+  - Frequency is 0:00:00
+  DC_POWER:
+  - Type is Float
+  - Interval between 0.0 and 0.0
+  - Frequency is 0:00:00
+  IRRADIATION:
+  - Type is Float
+  - Interval between 0.0 and 0.0
+  - Frequency is 0:00:00
+  MODULE_TEMPERATURE:
+  - Type is Float
+  - Interval between 21.968570866666667 and 24.384135571428573
+  - Frequency is 0:00:00
+  TOTAL_YIELD:
+  - Type is Float
+  - Interval between 6259559.0 and 6259559.0
+  - Frequency is 0:00:00
+'4136001':
+  AC_POWER:
+  - Type is Float
+  - Interval between 0.0 and 0.0
+  - Frequency is 0:00:00
+  AMBIENT_TEMPERATURE:
+  - Type is Float
+  - Interval between 25.6277024137931 and 27.004763700000005
+  - Frequency is 0:00:00
+  DAILY_YIELD:
+  - Type is Float
+  - Interval between 9425.0 and 9425.0
+  - Frequency is 0:00:00
+  DC_POWER:
+  - Type is Float
+  - Interval between 0.0 and 0.0
+  - Frequency is 0:00:00
+  IRRADIATION:
+  - Type is Float
+  - Interval between 0.0 and 0.0
+  - Frequency is 0:00:00
+  MODULE_TEMPERATURE:
+  - Type is Float
+  - Interval between 24.4206776 and 25.31796966666667
+  - Frequency is 0:00:00
+  TOTAL_YIELD:
+  - Type is Float
+  - Interval between 2429011.0 and 2429011.0
+  - Frequency is 0:00:00
+Anand_Vihar:
+  CO:
+  - Type is Float
+  - Interval between 1.06 and 3.58
+  - Frequency is 1 day, 0:00:00
+  OZONE:
+  - Type is Float
+  - Interval between 10.86 and 9.67
+  - Frequency is 1 day, 0:00:00
+  PM10:
+  - Type is Float
+  - Interval between 345.29 and 847.84
+  - Frequency is 1 day, 0:00:00
+  PM25:
+  - Type is Float
+  - Interval between 169.49 and 468.02
+  - Frequency is 1 day, 0:00:00
+  SO2:
+  - Type is Float
+  - Interval between 13.02 and 38.65
+  - Frequency is 1 day, 0:00:00
+Aruba_Motion:
+  VALUE:
+  - Type is String
+  - Frequency is 0:00:00
+Aruba_Temp:
+  VALUE:
+  - Type is Float
+  - Frequency is 0:00:00
+Delhi_DPCC:
+  CO:
+  - Type is Float
+  - Frequency is 0:00:00
+  OZONE:
+  - Type is Float
+  - Frequency is 0:00:00
+  PM10:
+  - Type is Float
+  - Frequency is 0:00:00
+  PM25:
+  - Type is Float
+  - Frequency is 0:00:00
+  SO2:
+  - Type is Float
+  - Frequency is 0:00:00
+ItalianCity:
+  AH:
+  - Type is Float
+  - Frequency is 0:00:00
+  C6H6(GT):
+  - Type is Float
+  - Frequency is 0:00:00
+  CO(GT):
+  - Type is Float
+  - Frequency is 0:00:00
+  NMHC(GT):
+  - Type is Int
+  - Frequency is 0:00:00
+  NO2(GT):
+  - Type is Int
+  - Frequency is 0:00:00
+  NOX(GT):
+  - Type is Int
+  - Frequency is 0:00:00
+  PT08.S1(CO):
+  - Type is Int
+  - Frequency is 0:00:00
+  PT08.S2(NMHC):
+  - Type is Int
+  - Frequency is 0:00:00
+  PT08.S3(NOX):
+  - Type is Int
+  - Frequency is 0:00:00
+  PT08.S4(NO2):
+  - Type is Int
+  - Frequency is 0:00:00
+  PT08.S5(O3):
+  - Type is Int
+  - Frequency is 0:00:00
+  RH:
+  - Type is Float
+  - Frequency is 0:00:00
+  T:
+  - Type is Float
+  - Frequency is 0:00:00
+Kyoto_Electricity:
+  VALUE:
+  - Type is Int
+  - Frequency is 0:00:00
+M003:
+  VALUE:
+  - Type is String
+  - Interval between OFF and ON
+  - Frequency is 0:00:00.399433
+M009:
+  VALUE:
+  - Type is String
+  - Interval between OFF and ON
+  - Frequency is 0:00:00.749996
+M017:
+  VALUE:
+  - Type is String
+  - Interval between OFF and ON
+  - Frequency is 0:00:00.300000
+M019:
+  VALUE:
+  - Type is String
+  - Interval between OFF and ON
+  - Frequency is 0:00:02.499985
+Milan_Motion:
+  VALUE:
+  - Type is String
+  - Frequency is 0:00:00
+Multisensor:
+  CO:
+  - Type is Float
+  - Frequency is 0:00:00
+  HUMIDITY:
+  - Type is Float
+  - Frequency is 0:00:00
+  LIGHT:
+  - Type is Bool
+  - Frequency is 0:00:00
+  LPG:
+  - Type is Float
+  - Frequency is 0:00:00
+  MOTION:
+  - Type is Bool
+  - Frequency is 0:00:00
+  SMOKE:
+  - Type is Float
+  - Frequency is 0:00:00
+  TEMP:
+  - Type is Float
+  - Frequency is 0:00:00
+P001:
+  VALUE:
+  - Type is Int
+  - Interval between 2853 and 2975
+  - Frequency is 0:00:03.301467
+Powerplant:
+  AC_POWER:
+  - Type is Float
+  - Frequency is 0:00:00
+  AMBIENT_TEMPERATURE:
+  - Type is Float
+  - Frequency is 0:00:00
+  DAILY_YIELD:
+  - Type is Float
+  - Frequency is 0:00:00
+  DC_POWER:
+  - Type is Float
+  - Frequency is 0:00:00
+  IRRADIATION:
+  - Type is Float
+  - Frequency is 0:00:00
+  MODULE_TEMPERATURE:
+  - Type is Float
+  - Frequency is 0:00:00
+  TOTAL_YIELD:
+  - Type is Float
+  - Frequency is 0:00:00
+T002:
+  VALUE:
+  - Type is Float
+  - Interval between 21.5 and 21.5
+  - Frequency is 0:00:00
+T003:
+  VALUE:
+  - Type is Int
+  - Interval between 21 and 21
+  - Frequency is 0:00:00
+b8:27:eb:bf:9d:51:
+  CO:
+  - Type is Float
+  - Interval between 0.0049136158112572 and 0.0049990326382737
+  - Frequency is 0:00:01.679668
+  HUMIDITY:
+  - Type is Float
+  - Interval between 50.8 and 51.0
+  - Frequency is 0:00:01.679668
+  LIGHT:
+  - Type is Bool
+  - Interval between False and False
+  - Frequency is 0:00:01.679668
+  LPG:
+  - Type is Float
+  - Interval between 0.0076035014233669 and 0.0076988906303042
+  - Frequency is 0:00:01.679668
+  MOTION:
+  - Type is Bool
+  - Interval between False and False
+  - Frequency is 0:00:01.679668
+  SMOKE:
+  - Type is Float
+  - Interval between 0.0202764459229124 and 0.0205482823192142
+  - Frequency is 0:00:01.679668
+  TEMP:
+  - Type is Float
+  - Interval between 22.6 and 22.7
+  - Frequency is 0:00:01.679668
+multisensor1:
+  AH:
+  - Type is Float
+  - Interval between 0,6195 and 0,8778
+  - Frequency is 0:46:09.230769
+  C6H6(GT):
+  - Type is Float
+  - Interval between 1,0 and 9,6
+  - Frequency is 0:46:09.230769
+  CO(GT):
+  - Type is Float
+  - Interval between -200 and 6,9
+  - Frequency is 0:46:09.230769
+  NMHC(GT):
+  - Type is Int
+  - Interval between -200 and 97
+  - Frequency is 0:46:09.230769
+  NO2(GT):
+  - Type is Int
+  - Interval between -200 and 98
+  - Frequency is 0:46:09.230769
+  NOX(GT):
+  - Type is Int
+  - Interval between -200 and 98
+  - Frequency is 0:46:09.230769
+  PT08.S1(CO):
+  - Type is Int
+  - Interval between 1010 and 988
+  - Frequency is 0:46:09.230769
+  PT08.S2(NMHC):
+  - Type is Int
+  - Interval between 1000 and 987
+  - Frequency is 0:46:09.230769
+  PT08.S3(NOX):
+  - Type is Int
+  - Interval between 1004 and 987
+  - Frequency is 0:46:09.230769
+  PT08.S4(NO2):
+  - Type is Int
+  - Interval between 1134 and 2390
+  - Frequency is 0:46:09.230769
+  PT08.S5(O3):
+  - Type is Int
+  - Interval between 1028 and 996
+  - Frequency is 0:46:09.230769
+  RH:
+  - Type is Float
+  - Interval between 31,3 and 81,1
+  - Frequency is 0:46:09.230769
+  T:
+  - Type is Float
+  - Interval between 10,1 and 9,8
+  - Frequency is 0:46:09.230769

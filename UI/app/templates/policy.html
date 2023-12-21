@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %} Simulation {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+    {% with messages = get_flashed_messages() %} 
+    {% if messages %}
+    <div class="alert alert-primary" role="alert" id="messages">
+        <button type="button" class="btn-close" 
+                aria-label="Close" 
+                onclick="document.getElementById('messages').style.display = 'none';">X</button>
+        {{ messages[0] }}
+    </div>
+    {% endif %} 
+{% endwith %}
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-chart">
+                <div class="card-header ">
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            <h2 class="card-title">Gestion de Policy</h2>
+                        </div>
+                    </div>
+                <div class="card-body text-center">
+                    <table style="margin-left: auto; margin-right: auto; min-width: 75%">
+                        <tr>
+                            <th>ID</th>
+                            <th>Scope</th>
+                            <th>IF</th>
+                            <th>THEN</th>
+                        </tr>
+                        {% for key, value in policies.items() %}
+                        <tr><form method="POST">
+                            <td>{{key}}<input type="hidden" name="Name" value="{{key}}"></td>
+                            <td><input type="text" name="scope" value="{{value['scope']}}"></td>
+                            <td>
+                                <input type="text" name="if_Sujet" value="{{value['if']['subject']}}" size="10">
+                                <input list="comparaison_if_{{key}}" name="comparaison_if_{{key}}" id="comparaison_if_{{key}}" value="{{value['if']['comparison']}}" size="3">
+                                <datalist id="comparaison_if_{{key}}">
+                                    <option value="<">
+                                    <option value=">">
+                                    <option value="<=">
+                                    <option value=">=">
+                                    <option value="==">
+                                    <option value="!=">
+                                </datalist>
+                                <input type="text" name="if_Objet" value="{{value['if']['object']}}" size="10">
+                            </td>
+                            <td>
+                                <input type="text" name="then_Sujet" value="{{value['then']['subject']}}" size="10">
+                                <input list="comparaison_then_{{key}}" name="comparaison_then_{{key}}" id="comparaison_then_{{key}}" value="{{value['then']['action']}}" size="10">
+                                <datalist id="comparaison_then_{{key}}">
+                                    <option value="Contact">
+                                    <option value="Change to">
+                                    <option value="Remove">
+                                </datalist>
+                                <input type="text" name="then_Objet" value="{{value['then']['object']}}" size="10">
+                            </td>
+                            <td><input type="submit" name="Update" value="Update"></td></form>
+                            <td>
+                                <form method="POST">
+                                <input type="hidden" name="Name" value="{{key}}">
+                                <input type="submit" name="Delete" value="Delete"></td>
+                                </form>
+                        </tr>
+                        {% endfor %}
+                        <tr><form method="POST">
+                            <td><input type="text" name="Name" size="10"></td>
+                            <td><input type="text" name="scope""></td>
+                            <td>
+                                <input type="text" name="if_Sujet" size="10">
+                                <input list="comparaison_if_" name="comparaison_if_" id="comparaison_if_" size="3">
+                                <datalist id="comparaison_if_">
+                                    <option value="<">
+                                    <option value=">">
+                                    <option value="<=">
+                                    <option value=">=">
+                                    <option value="==">
+                                    <option value="!=">
+                                </datalist>
+                                <input type="text" name="if_Objet" size="10">
+                            </td>
+                            <td>
+                                <input type="text" name="then_Sujet" size="10">
+                                <input list="comparaison_then_" name="comparaison_then_" id="comparaison_then_" size="10">
+                                <datalist id="comparaison_then_">
+                                    <option value="Contact">
+                                    <option value="Change to">
+                                    <option value="Remove">
+                                </datalist>
+                                <input type="text" name="then_Objet" size="10">
+                            </td>
+                            <td colspan="2"><input type="submit" name="Add" value="Add"></td></form>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

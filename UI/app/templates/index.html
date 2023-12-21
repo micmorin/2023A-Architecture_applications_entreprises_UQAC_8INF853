@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+        {% with messages = get_flashed_messages() %} 
+    {% if messages %}
+    <div class="alert alert-primary" role="alert" id="messages">
+        <button type="button" class="btn-close"
+                aria-label="Close" 
+                onclick="document.getElementById('messages').style.display = 'none';">X</button>
+        {{ messages[0] }}
+    </div>
+    {% endif %} 
+{% endwith %}
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-chart">
+                <div class="card-header ">
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            <h2 class="card-title">Mesures < 72h</h2>
+                        </div>
+                    </div>
+                <div class="card-body text-center">
+                    <table style="margin-left: auto; margin-right: auto; min-width: 75%">
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Objet</th>
+                            <th>ID</th>
+                            <th>Tag</th>
+                            <th>Mesure</th>
+                            <th>Valeur</th>
+                        </tr>
+                        {% for row in tables %}
+                        <tr>
+                            <td>{{row._time}}</td>
+                            <td>{{row._measurement}}</td>
+                            <td>{{row.ID}}</td>
+                            <td>{{row.Tag}}</td>
+                            <td>{{row._field}}</td>
+                            <td>{{row._value}}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
